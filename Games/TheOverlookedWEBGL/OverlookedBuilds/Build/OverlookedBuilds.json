@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "The Overlooked",
+"productVersion": "0.1",
+"dataUrl": "OverlookedBuilds.data.unityweb",
+"wasmCodeUrl": "OverlookedBuilds.wasm.code.unityweb",
+"wasmFrameworkUrl": "OverlookedBuilds.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "OverlookedBuilds.jpg",
+"splashScreenStyle": "Light",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.0a2"
+}
