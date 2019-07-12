@@ -8,15 +8,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>INTERMINUS | Games</title>
-      
+    <title>Interminus | Game Launcher</title>
+
+    <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="shortcut icon" href="EtxrnaLogo.jpg">
+
+    <!-- Custom styles for this template -->
     <link href="css/half-slider.css" rel="stylesheet">
+    
+    <!-- Setting Icon -->
+    <link rel="icon" type="image/jpg" href="EtxrnaLogo.jpg"/>
 
   </head>
   <style>
-    #stars {
+      #stars {
       width: 1px;
       height: 1px;
       background: transparent;
@@ -26,7 +31,7 @@
     #stars:after {
       content: " ";
       position: absolute;
-      top: 1000px;
+      top: 600px;
       width: 1px;
       height: 1px;
       background: transparent;
@@ -43,7 +48,7 @@
     #stars2:after {
       content: " ";
       position: absolute;
-      top: 1000px;
+      top: 600px;
       width: 2px;
       height: 2px;
       background: transparent;
@@ -60,7 +65,7 @@
     #stars3:after {
       content: " ";
       position: absolute;
-      top: 1000px;
+      top: 600px;
       width: 3px;
       height: 3px;
       background: transparent;
@@ -74,19 +79,12 @@
         transform: translateY(-2000px);
       }
     }
-     @font-face { 
+    @font-face { 
         font-family: Usedfont; src: url('ROBOTECH GP.ttf');
     }
     body {
       padding-top: 54px;
       font-family: Usedfont
-    }
-    .navbar-nav > li{
-      padding-right:30px;
-      padding-left:10px;
-    }
-    body {
-      padding-top: 54px;
     }
 
     @media (min-width: 992px) {
@@ -105,152 +103,76 @@
           height: 450px;
       }
     }
-    .imageResize{
-    width:100%;
-    height: 600px;
-    @media (min-width: 992px) {
-          height: 650px;
-        }    
+    .navbar-nav > li{
+      padding-right:30px;
+      padding-left:10px;
     }
-    .TextResize1{
-        font-size: 50px; 
-        text-align: center;
+    .navbar-default {
+      background-color:black;
+      background-image: none;
+      background-repeat: no-repeat;
+     }
+    .bg{
+      background-image: url("background.gif");
+      width: 100%;
+      height: 650px; 
+      background-size: cover;
     }
-  </style>
-
-  <body style="background-color: #141414; background-size:cover;">
+      html, body {
+        height: 100%;
+        width: 100%;
+    }
+    .reformat{
+       width: 100%;
+       height: 100%;
+       @media (min-width: 890px) {
+          height: 0%;
+          width: 0%;
+      }
+    }
+  </style>     
+  <body class="bg" style="padding-top: 55px;"/>
     <link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a0a0a;">
-      <div class="container">
-        <a href="#" class="navbar-left" style="padding-right: 10px;"><img src="Interminus.png" width="80px" height="80px"></a>
-        <u style="font-size: 50px; padding-bottom: 15px; padding-right: 30px;">
-          <a href="#" class="navbar-left" style="color:white;">INTERMINUS</a>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a0a0a; height: 15vh; min-height: 100px;">
+        <a href="#" class="navbar-left" style="padding-bottom: 0px;"><img src="Interminus.png" width="80px" height="80px"></a>
+        <u style="font-size: 50px; padding-bottom: 15px; padding-right: 0px;">
+          <a href="#" style="color:white;">INTERMINUS</a>
         </u>
+      <div class="container">
+        <a class="navbar-brand" href="#" style="font-size: 50px; color:red; padding-bottom: 20px; padding-left: 250px;">GAME LAUNCHER </a>
+        <li class="nav-item active">
+            <a class="nav-link" href=".." style="color:orange; font-size: 50px; padding-bottom: 50px;">BACK</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto, menu" style="font-size: 22px">
-            <li class="nav-item active">
-              <a class="nav-link" href=".." style="color:yellow;padding-bottom: 15px;">HOME
-                <span class="sr-only">(current)</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#" style="color:red;padding-bottom: 15px;">GAMES</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/Announcements/" style="color:blue;padding-bottom: 15px;">ANNOUNCEMENTS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/MoreInfo/" style="color:green;padding-bottom: 15px;">MORE INFO</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="/ContactInfo/" style="color:orange;padding-bottom: 15px;">CONTACT INFO</a>
-            </li>
+          <ul class="navbar-nav ml-auto, menu" style="font-size: 25px">
           </ul>
         </div>
       </div>
     </nav>
-    <header style="padding-top: 55px;">
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active" style="background-image: url('secondarybackground.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 style="font-size: 40px">Game Launcher</h3>
-                <p style="font-size: 18px">Download our game launcher for weekly demos</p>
-            </div>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('GamePicOverlooked1.png')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 style="font-size: 40px">The Overlooked</h3>
-              <p style="font-size: 18px">Production has finally begun</p>
-            </div>
-          </div>
-          <div class="carousel-item" style="background-image: url('EtxrnaLogo.jpg')">
-            <div class="carousel-caption d-none d-md-block">
-              <h3 style="font-size: 40px">Infinite</h3>
-              <p style="font-size: 18px">The possibilities are endless</p>
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
-    <header>
-        <h1 class = "TextResize1" style="color: white"> Games
-        </h1>
-    </header>
     <!-- Page Content -->
-    <div class="container" >
+    <div class="container" style="padding-top: 55px;">
       <div class="row"> 
-          <div class="col-md-3">
-              <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:white">PC</h5>
-                <div class="card-body" style="color:white">
-                  Game Launcher Coming Soon
-                  <br> <button  type="button" class="btn btn-dark" onclick="location.href='TheOverlookedWebsite/index.html'" style="color:black; background-color: darkred; width: 100%">DOWNLOAD</button>
-                </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:white">Mobile Games</h5>
-                <div class="card-body" style="color:white">
-                Support Coming Soon 
-                </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:white">Console Games</h5>
-                <div class="card-body" style="color:white">
-                 Support Coming Soon 
-                </div>
-              </div>
-          </div>
-          <div class="col-md-3">
-              <div class="card my-4" style="background: url(background.jpg)">
-                <h5 class="card-header" style="color:white">Online Games</h5>
-                <div class="card-body" style="color:white">
-                 No Unity Support
-                </div>
-              </div>
+          <div class="col-md-12; col text-center" style="padding-top: 20px">
+              <button  type="button" class="btn btn-primary;" onclick="location.href='TheOverlookedWebsite/index.html" style="color:white; background-color: white; width: 800px;height: 300px; font-size: 90px; background: url(background.jpg); padding-bottom: 50px;">DOWNLOAD LAUNCHER
+              <br><img src="downloadpng.png" style="height:100px; width: 100px;"></button>
           </div>
         </div>
     </div>
-      
-    <!-- Footer -->
-    <footer class="py-5" style="background-color:#0a0a0a; height: 15vh; min-height: 200px;">
+    <footer class="py-5 fixed-bottom" style="background-color: #0a0a0a; height: 15vh; min-height: 200px;" >
       <div class="container">
         <p class="m-0 text-center text-white" style="font-size: 25px">Copyright &copy; INTERMINUS 2019</p>
         <p href="#" class="text-center"><img src="Interminus.png" width="80px" height="80px"></p>
       </div>
       <!-- /.container -->
     </footer>
-
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-  </body>
-
 </html>
