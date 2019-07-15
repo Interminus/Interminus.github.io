@@ -21,6 +21,14 @@
 
   </head>
   <style>
+      @media only screen and (max-width: 700px) {
+      .isDisabled {
+          cursor: not-allowed;
+          opacity: 0;
+          height: 100px;
+          font-size: 50px;
+      }
+      }
       #stars {
       width: 1px;
       height: 1px;
@@ -136,21 +144,25 @@
     <div id='stars'></div>
     <div id='stars2'></div>
     <div id='stars3'></div>
-    <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a0a0a; height: 15vh; min-height: 100px;">
-        <a href="#" class="navbar-left" style="padding-bottom: 0px;"><img src="Interminus.png" width="80px" height="80px"></a>
-        <u style="font-size: 50px; padding-bottom: 15px; padding-right: 0px;">
-          <a href="#" style="color:white;">INTERMINUS</a>
-        </u>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #0a0a0a;">
       <div class="container">
-        <a class="navbar-brand" href="#" style="font-size: 50px; color:red; padding-bottom: 20px; padding-left: 250px;">GAME LAUNCHER </a>
-        <li class="nav-item active">
-            <a class="nav-link" href=".." style="color:orange; font-size: 50px; padding-bottom: 50px;">BACK</a>
+        <a href="#" class="navbar-left" style="padding-right: 10px;"><img src="Interminus.png" width="80px" height="80px"></a>
+        <u style="font-size: 50px; padding-bottom: 15px; padding-right: 30px;">
+          <a href="#" class="navbar-left" style="color:white;">INTERMINUS</a>
+        </u>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto, menu" style="font-size: 25px">
+          <ul class="navbar-nav ml-auto, menu" style="font-size: 35px">
+            <li class="nav-item active">
+              <a class="nav-link" href="#" style="color:yellow;padding-bottom: 15px;">GAME LAUNCHER
+                <span class="sr-only">(current)</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href=".." style="color:red;padding-bottom: 15px;">Back</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -158,13 +170,15 @@
     <!-- Page Content -->
     <div class="container" style="padding-top: 55px;">
       <div class="row"> 
-          <div class="col-md-12; col text-center" style="padding-top: 20px">
-              <button  type="button" class="btn btn-primary;" onclick="location.href='TheOverlookedWebsite/index.html" style="color:white; background-color: white; width: 800px;height: 300px; font-size: 90px; background: url(background.jpg); padding-bottom: 50px;">DOWNLOAD LAUNCHER
+          <div class="col-md-12; col text-center" style="padding-bottom: 30px">
+              <p style="color:white; font-size: 50px;">DOWNLOAD NOT SUPPORTED ON MOBILE DEVICES</p>
+              <button  type="button" class="btn btn-primary; isDisabled" onclick="location.href='TheOverlookedWebsite/index.html" style="color:white; background-color: white; width: 800px;height: 300px; font-size: 60px; background: url(background.jpg); padding-bottom: 40px;">DOWNLOAD LAUNCHER <br>AND THE OVERLOOKED <a href="/TheOverlookedPlusLaunch" download></a>
               <br><img src="downloadpng.png" style="height:100px; width: 100px;"></button>
           </div>
+          
         </div>
     </div>
-    <footer class="py-5 fixed-bottom" style="background-color: #0a0a0a; height: 15vh; min-height: 200px;" >
+    <footer class="py-5" style="background-color: #0a0a0a; height: 15vh; min-height: 200px;" >
       <div class="container">
         <p class="m-0 text-center text-white" style="font-size: 25px">Copyright &copy; INTERMINUS 2019</p>
         <p href="#" class="text-center"><img src="Interminus.png" width="80px" height="80px"></p>
